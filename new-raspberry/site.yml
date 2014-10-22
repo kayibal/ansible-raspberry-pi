@@ -1,13 +1,13 @@
 ---
 - hosts: third
-  user: pi
+  remote_user: pi
   sudo: True
-  gather_facts: no
+  gather_facts: yes
 
   roles:
-     - common
-     - oh-my-zsh
-     - rmate
+      - common
+      - oh-my-zsh
+      - rmate
 
   tasks:
     - name: Final greeting upon successful Completion.

@@ -27,6 +27,7 @@
     - rpi-update
     - haveged
     - avahi-daemon 
+    - tor
 
 - name: Uninstall the massive wolfram-alpha engine
   apt: pkg={{ item }} state=absent
