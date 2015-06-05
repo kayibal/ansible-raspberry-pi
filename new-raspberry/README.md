@@ -31,7 +31,9 @@ Before you can run any of your playbooks you should copy over your ssh keys to y
 
 ### Choosing your Hostname ###
 
-Once you've decided what your new Raspberry Pi is going to be called, navigate to the file `roles/common/vars/main.yml`, and change the line: `hostname: raspberrypi` to reflect your choice.
+Once you've decided what your new Raspberry Pi is going to be called, navigate to the file `roles/common/vars/main.yml`, and change the line: `hostname: raspberrypi` to reflect your choice. 
+
+Also make sure that in the file `site.yml`, the line  `- hosts: raspberrypi` reflects your chosen hostname.
 
 ### Choosing your Oh-My-ZSH Theme ###
 
