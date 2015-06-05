@@ -10,7 +10,7 @@
 
   tasks:
     - name: Creates destination directory on the Pi for our key.
-#      file: state=directory mode=0007 dest=/home/pi/.ssh/
+      file: state=directory mode=0007 dest=/home/pi/.ssh/
 
       file: state=directory dest=/home/pi/.ssh/
 

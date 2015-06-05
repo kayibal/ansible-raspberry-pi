@@ -1,0 +1,6 @@
+[raspberries]
+#first ansible_ssh_host=192.168.0.51 ansible_ssh_user=pi
+second ansible_ssh_host=192.168.0.52 ansible_ssh_user=pi
+third ansible_ssh_host=192.168.0.53 ansible_ssh_user=pi
+#fourth ansible_ssh_host=192.168.0.54 ansible_ssh_user=pi
+raspbeast ansible_ssh_host=192.168.0.39 ansible_ssh_user=pi

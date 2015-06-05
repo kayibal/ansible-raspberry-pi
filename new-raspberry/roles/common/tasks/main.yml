@@ -19,15 +19,14 @@
     - curl
     - htop
     - nmap
-    - mosh
     - tmux
     - zsh
     - nmon
-    - dstat
     - rpi-update
     - haveged
     - avahi-daemon 
-    - tor
+    - rng-tools
+    - vim
 
 - name: Uninstall the massive wolfram-alpha engine
   apt: pkg={{ item }} state=absent

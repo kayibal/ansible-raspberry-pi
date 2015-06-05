@@ -1,4 +1,4 @@
 # Change these variables invest normal data file to reflect your SSID and passphrase.
-ssid: ┓┏ 凵 =╱⊿┌┬┐
-wpa_passphrase: raspberryaccesspoint
+ssid: TheSilence of the LANS
+wpa_passphrase: youwillneverguessthepassword
 chipset: nl80211
