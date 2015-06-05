@@ -27,7 +27,7 @@ The word raspberry at the beginning of the second line is an alias for the remot
 
 Before you can run any of your playbooks you should copy over your ssh keys to your Raspberry Pi, this means you don't have to enter your password each time you run a playbook:
 
-        ssh-copy-id pi@your-raspberry-pi-ip-address
+		ansible-playbook -c paramiko -i hosts setup.yml --ask-pass --sudo
 
 ### Choosing your Hostname ###
 
