@@ -33,6 +33,14 @@ If you want to change the hostname of your Raspberry Pi go to `roles/common/vars
 
 If you want to change the SSID and Passphrase(you definitely do!) of your hotspot, navigate to the file `roles/hotspot/defaults/main.yml` and change the values accordingly.
 
+## Running Raspi-Config
+
+Instead of running Raspi-Config manually to do things like expand the root filesystem to fill up the entire SD card, we can use a role from the ansible-galaxy system to run it for us.  Specifically we are going to use a role created by [mikolak-net](https://github.com/mikolak-net/ansible-raspi-config) to do the deed.
+
+To install it simply run  `ansible-galaxy install -r requirements.yml` in the raspberry-to-hotspot folder, and everything should be installed for you.
+
+Its configuration options can be found in roles/mikolak.raspi-config/defaults/main.yml and you can configure things like hostname etc in that file.
+
 ## Running the Playbook
 
 To run the playbook issue this in the terminal:
